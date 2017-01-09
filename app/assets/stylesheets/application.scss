@@ -4,14 +4,21 @@
 @import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Patua+One');
 
+
 .navbar-default {
     background-color:  #fff;
     border-color:  #fff;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 2px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #26a69a;
-    font-family: 'Patua One', cursive;
+    color: #299cd1;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .nav > li > a {
@@ -20,15 +27,31 @@
     padding: 10px 30px;
 }
 
+.nav-img{
+  float:left;
+}
+
+.navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: -5px;
+}
+
+.navbar-default .navbar-brand {
+    color: #f4b642;
+}
+
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 5px;
 }
 
-
-
+.site-header.collapsed-nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
 
 // sliders style
 
@@ -188,9 +211,6 @@ input,
 select,
 textarea {
   font-family: sans-serif; }
-
-body {
-  margin: 0; }
 
 a {
   background: transparent; }
@@ -355,7 +375,9 @@ html {
   font-size: 15px; }
 
 body {
-  color: #8e9ca5;
+  margin: 0;
+  background-color: #c5d9dd;
+  color: #000;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.5; }
@@ -1270,11 +1292,6 @@ form input[type="submit"], form button, form input[type="reset"] {
 .site-header {
   position: relative;
   z-index: 9; }
-  .site-header.collapsed-nav {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    left: 0; }
 
 .header-bar {
   *zoom: 1;
@@ -1320,11 +1337,13 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 20px;
     font-size: 1.3333333333em;
     color: #8e9ca5;
+    // color: #69c7b7; /* this might be a good color for nav*/
     outline: none;
     display: none;
     padding: 20px; }
     .main-navigation .menu-toggle:hover, .main-navigation .menu-toggle:active {
-      color: #69acc7; }
+      color: #69acc7;
+    }
     @media screen and (max-width: 990px) {
       .main-navigation .menu-toggle {
         display: block; } }
@@ -1353,14 +1372,16 @@ form input[type="submit"], form button, form input[type="reset"] {
         font-weight: 400;
         padding: 32px 20px;
         display: block;
-        color: #8e9ca5;
+        color: #69acc7;  /*color for the team contact in navbar*/
         -webkit-transition: .3s ease;
                 transition: .3s ease;
         border-bottom: 2px solid transparent;
         line-height: normal; }
       .main-navigation .menu .menu-item.current-menu-item a, .main-navigation .menu .menu-item:hover a {
         color: #69acc7;
-        border-bottom: 2px solid #69acc7; }
+        // color: #69c7b7; /* could be used as a color for navbar*/
+        // border-bottom: 2px solid #69acc7;
+      }
 
 .mobile-navigation {
   padding: 30px;
@@ -1385,7 +1406,8 @@ form input[type="submit"], form button, form input[type="reset"] {
         background: #c6dfea;
         color: white; }
     .mobile-navigation .menu .menu-item {
-      border-bottom: 1px solid white; }
+      // border-bottom: 1px solid white;
+    }
       .mobile-navigation .menu .menu-item:last-child {
         border-bottom: none; }
 
@@ -1488,8 +1510,9 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 18px;
     font-size: 1.2em; }
 
-.fullwidth-block {
-  padding: 50px 0; }
+.fullwidth-block-1{
+  padding: 50px 0;
+}
 
 .section-title {
   font-size: 30px;
@@ -1511,6 +1534,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 2em;
     font-weight: 300; }
   .feature p {
+    text-align: justify;
     font-size: 16px;
     font-size: 1.0666666667em;
     margin-bottom: 30px; }
@@ -1851,3 +1875,8 @@ figure {
     border-bottom: 1px solid #edf2f4; }
     .arrow-list.has-border li:last-child {
       border-bottom: none; }
+
+
+.slide-margin{
+        margin-top: 85px;  /* provide the margin if required between navbar and the slide images*/
+      }
