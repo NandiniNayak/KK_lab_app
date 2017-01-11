@@ -384,7 +384,9 @@ body {
   background-color: #c5d9dd;
   // background-color: #fff;
   color: #000;
-  font-family: "Roboto", "Open Sans", sans-serif;
+  // font-size: 16px;
+  // font-size: 1em;
+  font-family: cursive;
   font-weight: 300;
   line-height: 1.5;
   width : 100%;
@@ -1322,11 +1324,11 @@ form input[type="submit"], form button, form input[type="reset"] {
     margin-right: 10px; }
   .branding .logo-type .site-title {
     margin: 0 0 5px;
-    font-size: 16px;
-    font-size: 1.0666666667em; }
+    font-size: 50px;
+    font-size: 1.8em; }
   .branding .logo-type .site-description {
-    font-size: 12px;
-    font-size: 0.8em; }
+    font-size: 45px;
+    font-size: 1.4em; }
 
 .main-navigation {
   *zoom: 1;
@@ -1374,8 +1376,8 @@ form input[type="submit"], form button, form input[type="reset"] {
       .main-navigation .menu .menu-item.home a {
         padding: 28px 30px 31px; }
       .main-navigation .menu .menu-item a {
-        font-size: 13px;
-        font-size: 0.8666666667em;
+        font-size: 23px;
+        font-size: 1.4em;
         text-transform: uppercase;
         font-weight: 400;
         padding: 32px 20px;
@@ -1524,7 +1526,7 @@ form input[type="submit"], form button, form input[type="reset"] {
 
 .section-title {
   font-size: 30px;
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 300;
   margin-bottom: 30px; }
 
@@ -1544,8 +1546,10 @@ form input[type="submit"], form button, form input[type="reset"] {
   .feature p {
     text-align: justify;
     font-size: 16px;
-    font-size: 1.0666666667em;
-    margin-bottom: 30px; }
+    font-size: 1.7em;
+    margin-bottom: 30px;
+    font-family: cursive;
+   }
 
 .post {
   position: relative;
@@ -1904,4 +1908,8 @@ figure {
 .image-circle{
   border-radius: 6%;
   border: 1px solid purple;
+}
+.nav-margin{
+  margin-left: 45px;
+  margin-right: 45px;
 }
