@@ -1,0 +1,25 @@
+<div class="slide-margin1">
+  <div class="">
+     <table class="" >
+        <tbody>
+          <% @teams.each do |team| %>
+            <tr class="col-md-12 table-data-margin">
+              <td class="col-md-8">
+                <%= image_tag(team.picture_url(:thumbnail))%>
+              </td>
+              <td class="col-md-4">
+                <%= team.name %><br>
+                <%= team.position %><br>
+                <%= link_to "Publications", team.publication , target: "blank" %><br>
+              </td>
+              <!-- <td><%= link_to 'Show', team %></td>
+              <td><%= link_to 'Edit', edit_team_path(team) %></td>
+              <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+            </tr>
+          <% end %>
+       </tbody>
+      </table>
+  </div>
+</div>
+<br>
+<%= link_to 'New Team', new_team_path %>

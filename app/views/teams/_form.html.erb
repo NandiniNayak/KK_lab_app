@@ -1,0 +1,19 @@
+<div class="login-center">
+    <%= simple_form_for(@team) do |f| %>
+      <%= f.error_notification %>
+      <div class="fullwidth-block-1" data-bg-color="#edf2f4">
+        <div class="container">
+          <div class="subscribe-form">
+            <%= f.input :name , placeholder: "Enter your name" %>
+            <%= f.input :position , placeholder: "Enter your Position in Lab" %>
+            <%= f.input :publication , placeholder: "provide a link to your publications" %>
+            <%= f.input :picture, as: :file, placeholder: "upload a display picture" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <%= f.button :submit, class: "btn btn-success" %>
+      </div>
+    <% end %>
+</div>

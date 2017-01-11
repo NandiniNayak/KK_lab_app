@@ -22,7 +22,7 @@
 		    myIndex++;
 		    if (myIndex > x.length) {myIndex = 1}
 		    x[myIndex-1].style.display = "block";
-		    setTimeout(carousel, 4000); // Change image every 2 seconds
+		    setTimeout(carousel, 4000); // Change image every 4 seconds
 		}
 		</script>
 			<main class="main-content">
@@ -92,16 +92,12 @@
 							</div>
 						</div>
 
-						<div class="fullwidth-block-1" data-bg-color="#edf2f4">
-							<div class="container">
-								<div class="subscribe-form">
-									<h2>Join our newsletter</h2>
-									<form action="#">
-										<input type="text" placeholder="Enter your email">
-										<input type="submit" value="Subscribe">
-									</form>
-								</div>
-							</div>
+						<div class="fullwidth-block-1">
+							<h2>Join our newsletter</h2>
+							<form action="#">
+								<input type="text" placeholder="Enter your email">
+								<input type="submit" value="Subscribe">
+							</form>
 						</div>
 
 					</main> <!-- .main-content -->
@@ -109,6 +105,11 @@
 					<footer class="site-footer">
 							<p class="colophon">copyright 2017 Nandini Kamath.All rights reserved</p>
 						</div> <!-- .container -->
+						<% if admin_signed_in? %>
+						   <%= link_to('logout', destroy_admin_session_path, method: :delete) %>
+						<% else %>
+						  <%= link_to('Administrator login', new_admin_session_path) %>
+						<% end %>
 					</footer>
 				</div>
 

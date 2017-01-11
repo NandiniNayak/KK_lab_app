@@ -53,6 +53,11 @@
     left: 0;
 }
 
+
+.login-center{
+    padding-top: 165px;
+    float: left;
+}
 // sliders style
 
 .sect-banner{
@@ -377,10 +382,13 @@ html {
 body {
   margin: 0;
   background-color: #c5d9dd;
+  // background-color: #fff;
   color: #000;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 300;
-  line-height: 1.5; }
+  line-height: 1.5;
+  width : 100%;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -1880,3 +1888,20 @@ figure {
 .slide-margin{
         margin-top: 85px;  /* provide the margin if required between navbar and the slide images*/
       }
+.slide-margin1 {
+    margin-top: 100px;
+    padding-left: 15%;
+}
+.people-name {
+    font-size: 20px;
+    color: #094E7C;
+}
+
+.table-data-margin{
+  margin-bottom: 5%;
+
+}
+.image-circle{
+  border-radius: 6%;
+  border: 1px solid purple;
+}

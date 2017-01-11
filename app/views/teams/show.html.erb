@@ -1,0 +1,23 @@
+<div class="login-center">
+  <div class="fullwidth-block-1">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @team.name %>
+    </p>
+
+    <p>
+      <strong>Position:</strong>
+      <%= @team.position %>
+    </p>
+
+    <p>
+      <strong>Publication:</strong>
+      <%= @team.publication %>
+    </p>
+
+    <%= link_to 'Edit', edit_team_path(@team) %> |
+    <%= link_to 'Back', teams_path %>
+  </div>
+</div>
