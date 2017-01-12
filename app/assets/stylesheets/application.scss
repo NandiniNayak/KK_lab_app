@@ -53,7 +53,6 @@
     left: 0;
 }
 
-
 .login-center{
     padding-top: 165px;
     float: left;
@@ -81,7 +80,6 @@
   background-color: rgba(118, 144, 164, 0.4);
   z-index: 0;
  }
-
  /*-- Vertically center --*/
  .v-center{
   display: table-cell;
@@ -91,7 +89,6 @@
   padding: 0 5%;
  }
 }
-
 /*----------------------------------------------
 --List for images, sm and large
 -----------------------------------------------  */
@@ -385,7 +382,7 @@ body {
   // background-color: #fff;
   color: #000;
   // font-size: 16px;
-  // font-size: 1em;
+  // font-size: 1.2em;
   font-family: cursive;
   font-weight: 300;
   line-height: 1.5;
@@ -434,6 +431,7 @@ form input[type="submit"], form button, form input[type="reset"] {
  * Reusable Components Style
  */
 .button, form input[type="submit"], form button, form input[type="reset"] {
+  font-size: 1.5em;
   background: #e7edf1;
   display: inline-block;
   padding: 10px 25px;
@@ -1523,6 +1521,10 @@ form input[type="submit"], form button, form input[type="reset"] {
 .fullwidth-block-1{
   padding: 50px 0;
 }
+.fullwidth-block p {
+  font-size: 1.5em;
+  text-align: justify;
+}
 
 .section-title {
   font-size: 30px;
@@ -1546,10 +1548,13 @@ form input[type="submit"], form button, form input[type="reset"] {
   .feature p {
     text-align: justify;
     font-size: 16px;
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin-bottom: 30px;
     font-family: cursive;
    }
+  .feature a {
+    font-size: 1.5em;
+  }
 
 .post {
   position: relative;
@@ -1880,20 +1885,24 @@ figure {
     .arrow-list li a {
       color: #8e9ca5;
       -webkit-transition: .3s ease;
-              transition: .3s ease; }
+              transition: .3s ease;
+      font-size: 1.5em;
+     }
       .arrow-list li a:hover {
         color: #69acc7; }
   .arrow-list.has-border li {
     border-bottom: 1px solid #edf2f4; }
     .arrow-list.has-border li:last-child {
       border-bottom: none; }
-
+.arrow-list a{
+  font-size: 1.5em;
+}
 
 .slide-margin{
         margin-top: 85px;  /* provide the margin if required between navbar and the slide images*/
       }
 .slide-margin1 {
-    margin-top: 100px;
+    margin-top: 150px;
     padding-left: 15%;
 }
 .people-name {
@@ -1903,6 +1912,7 @@ figure {
 
 .table-data-margin{
   margin-bottom: 5%;
+  font-size: 1em;
 
 }
 .image-circle{
@@ -1912,4 +1922,29 @@ figure {
 .nav-margin{
   margin-left: 45px;
   margin-right: 45px;
+}
+.team-table-size{
+  font-size: 1.5em;
+}
+.team-title{
+  font-weight: bold;
+  color: purple;
+  font-size: 1.7em;
+}
+.address{
+  font-size: 1.5em;
+}
+.contact-title{
+  text-align: center;
+}
+.footer-bar{
+  width:100%;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin-top: 5%;
+  background: white;
+  // position: fixed;
+  // margin-left: 45px;
+  // margin-right: 145px;
+  z-index: 9;
 }

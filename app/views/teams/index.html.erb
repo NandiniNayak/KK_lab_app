@@ -1,13 +1,13 @@
 <div class="slide-margin1">
-  <div class="">
-     <table class="" >
+  <div class="team-table-size">
+     <table>
         <tbody>
           <% @teams.each do |team| %>
-            <tr class="table-data-margin col-md-12">
-              <td class="col-md-8">
+            <tr class="table-data-margin col-md-8">
+              <td class="col-md-4">
                 <%= image_tag(team.picture_url(:thumbnail))%>
               </td>
-              <td class="col-md-4">
+              <td class ="col-md-4">
                 <%= team.name %><br>
                 <%= team.position %><br>
                 <%= link_to "Publications", team.publication , target: "blank" %><br>
