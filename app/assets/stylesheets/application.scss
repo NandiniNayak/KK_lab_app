@@ -1899,7 +1899,10 @@ figure {
 }
 
 .slide-margin{
-        margin-top: 85px;  /* provide the margin if required between navbar and the slide images*/
+        margin-top: 100px;  /* provide the margin if required between navbar and the slide images*/
+        margin-left: 0px;
+        margin-right: 0px;
+
       }
 .slide-margin1 {
     margin-top: 150px;
@@ -1948,3 +1951,17 @@ figure {
   // margin-right: 145px;
   z-index: 9;
 }
+
+.team-title{
+  border-left: 8px solid purple;
+  padding-left: 15px;
+  font-size: 1.2em;
+}
+.team-position{
+  font-size: 0.8em;
+  color: blue;
+}
+.team-description{
+  text-align: justify;
+}
+// carousel effect

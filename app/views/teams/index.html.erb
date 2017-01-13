@@ -3,21 +3,28 @@
      <table>
         <tbody>
           <% @teams.each do |team| %>
-            <tr class="table-data-margin col-md-8">
-              <td class="col-md-4">
+            <tr class="table-data-margin col-md-12">
+              <td class="col-md-4 team-image">
                 <%= image_tag(team.picture_url(:thumbnail))%>
               </td>
-              <td class ="col-md-4">
-                <%= team.name %><br>
-                <%= team.position %><br>
-                <%= link_to "Publications", team.publication , target: "blank" %><br>
+              <td class ="col-md-8">
+                <div class="team-title">
+                  <%= team.name %><br>
+                  <div class="team-position">
+                  <%= team.position %><br>
+                  </div>
+                </div>
+                <div class="team-description">
+                  <%= team.description %><br>
+                </div>
+                <%= link_to "Publications", team.publication , target: "blank",class:"btn btn-primary" %><br>
               </td>
               <td></td>
               <td></td>
               <td></td>
-              <!-- <td><%= link_to 'Show', team %></td>
+              <td><%= link_to 'Show', team %></td>
               <td><%= link_to 'Edit', edit_team_path(team) %></td>
-              <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+              <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
           <% end %>
        </tbody>
