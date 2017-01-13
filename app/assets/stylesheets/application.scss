@@ -2,7 +2,7 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto');
 
 
 .navbar-default {
@@ -383,7 +383,7 @@ body {
   color: #000;
   // font-size: 16px;
   // font-size: 1.2em;
-  font-family: cursive;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.5;
   width : 100%;
@@ -1550,7 +1550,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 16px;
     font-size: 1.5em;
     margin-bottom: 30px;
-    font-family: cursive;
+    font-family: 'Roboto', sans-serif;
    }
   .feature a {
     font-size: 1.5em;
@@ -1965,3 +1965,9 @@ figure {
   text-align: justify;
 }
 // carousel effect
+.publication-link{
+  font-size: 1.2em;
+  color:blue;
+  border-left: 2px solid purple;
+  padding-left: 15px;
+}
