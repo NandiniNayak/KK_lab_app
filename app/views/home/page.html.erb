@@ -141,8 +141,12 @@
 
 		</div>
 			<footer class="footer-bar">
-					<p class="colophon">copyright 2017 Nandini Kamath.All rights reserved</p>
-					<p> Website visit counter: </p><a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=molloylab.herokuapp.com&digit=style/plain/15/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://www.fabbly.com" target="_blank" style="font-family: sans-serif, Arial; font-size: 9px; color: #4286f4; text-decoration: none;"></a>
+				<p class="colophon">copyright 2017 Nandini Kamath.All rights reserved</p>
+				<div class="website-counter-right">
+					<p> Website visit counter -
+						<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=molloylab.herokuapp.com&digit=style/plain/15/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://www.fabbly.com" target="_blank" style="font-family: sans-serif, Arial; font-size: 9px; color: #4286f4; text-decoration: none;"></a>
+					</p>
+				</div>
 				</div> <!-- .container -->
 				<% if admin_signed_in? %>
 				   <%= link_to('logout', destroy_admin_session_path, method: :delete) %>

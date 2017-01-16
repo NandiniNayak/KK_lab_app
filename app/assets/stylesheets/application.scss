@@ -1946,6 +1946,7 @@ figure {
   border-radius: 5px;
   margin-top: 5%;
   background: white;
+  padding-left: 10px;
   // position: fixed;
   // margin-left: 45px;
   // margin-right: 145px;
@@ -1981,4 +1982,8 @@ figure {
   margin-top: 25px;
   color: purple;
   font-size: 1.8em;
+}
+.website-counter-right{
+  float: right;
+  padding-right: 10px;
 }
