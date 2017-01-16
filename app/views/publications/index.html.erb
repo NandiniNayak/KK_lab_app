@@ -1,11 +1,13 @@
 <div class="slide-margin1">
+  <h1> Representative Publications </h1>
     <% @publications.each do |publication| %>
-      <h1><%= publication.year%> publications</h1><br>
+      <!-- <h1><%= publication.year.strftime("%Y")%> publications</h1><br> -->
       <%= link_to publication.title, publication.title , target: "blank",class:"publication-link" %><br>
       <br>
     <% end %>
     <br>
     <br>
     <br>
+
   <%= link_to 'New Publication', new_publication_path %>
 </div>
