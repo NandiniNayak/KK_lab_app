@@ -1968,6 +1968,17 @@ figure {
 .publication-link{
   font-size: 1.2em;
   color:blue;
-  border-left: 2px solid purple;
+  // border-left: 2px solid purple;
   padding-left: 15px;
+}
+.publication-title{
+  font-size: 1.2em;
+  color:blue;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.heading-style{
+  margin-top: 25px;
+  color: purple;
+  font-size: 1.8em;
 }

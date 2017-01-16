@@ -1,9 +1,17 @@
 <div class="slide-margin1">
-  <h1> Representative Publications </h1>
+  <h1 class="heading-style"> Representative Publications </h1>
     <% @publications.each do |publication| %>
       <!-- <h1><%= publication.year.strftime("%Y")%> publications</h1><br> -->
-      <%= link_to publication.title, publication.title , target: "blank",class:"publication-link" %><br>
+      <div class="publication-title">
+        <br>
+        <%= publication.title %>
+      </div>
+        <td><%= link_to 'Destroy', publication, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
+    <h2 class="heading-style"> Link to full list of publications on pubmed </h2>
+    <% @publications.each do |publication| %>
       <br>
+      <%= link_to publication.publink, publication.publink , target: "blank",class:"publication-link" %><br>
     <% end %>
     <br>
     <br>
