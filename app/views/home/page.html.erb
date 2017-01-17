@@ -124,13 +124,12 @@
 						</div>
 						<div class="col-md-4">
 							<h2 class="section-title">Research summaries</h2>
-							<ul class="arrow-list has-border">
-								<li><a href="#">link to the latest publication</a></li>
-								<li><a href="#">link to the latest publication</a></li>
-								<li><a href="#">link to the latest publication</a></li>
-								<li><a href="#">link to the latest publication</a></li>
-							</ul>
-							<a href="#" class="button">Show more</a>
+							<% @LatestPublications.each do |latestpublication| %>
+								<ul class="arrow-list has-border">
+									<li><%= link_to latestpublication.publink, latestpublication.publink %></li>
+								</ul>
+							<% end %>
+							<a href="/publications" class="button">Show more</a>
 						</div>
 					</div>
 				</div>
@@ -141,7 +140,7 @@
 
 		</div>
 			<footer class="footer-bar">
-				<p class="colophon">copyright 2017 Nandini Kamath.All rights reserved</p>
+				<p class="colophon"> Copyright 2017 Nandini Kamath.All rights reserved</p>
 				<div class="website-counter-right">
 					<p> Website visit counter -
 						<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=molloylab.herokuapp.com&digit=style/plain/15/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://www.fabbly.com" target="_blank" style="font-family: sans-serif, Arial; font-size: 9px; color: #4286f4; text-decoration: none;"></a>
