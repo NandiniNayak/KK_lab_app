@@ -450,27 +450,27 @@ form input[type="submit"], form button, form input[type="reset"] {
   .button.white, form input.white[type="submit"], form button.white, form input.white[type="reset"] {
     background: white; }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 2px;
-  padding-right: 2px;
-  *zoom: 1; }
-  .container:after {
-    content: " ";
-    clear: both;
-    display: block;
-    overflow: hidden;
-    height: 0; }
-  @media (min-width: 768px) {
-    .container {
-      width: 750px; } }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px; } }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px; } }
+// .container {
+//   margin-right: auto;
+//   margin-left: auto;
+//   padding-left: 2px;
+//   padding-right: 2px;
+//   *zoom: 1; }
+//   .container:after {
+//     content: " ";
+//     clear: both;
+//     display: block;
+//     overflow: hidden;
+//     height: 0; }
+//   @media (min-width: 768px) {
+//     .container {
+//       width: 750px; } }
+//   @media (min-width: 992px) {
+//     .container {
+//       width: 970px; } }
+//   @media (min-width: 1200px) {
+//     .container {
+//       width: 1170px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -1311,6 +1311,12 @@ form input[type="submit"], form button, form input[type="reset"] {
     display: block;
     overflow: hidden;
     height: 0; }
+    @media screen and (max-width:990px){
+      .header-bar .branding img{
+        display: none;
+      }
+    }
+
 
 .branding {
   float: left;
@@ -1530,7 +1536,8 @@ form input[type="submit"], form button, form input[type="reset"] {
   font-size: 30px;
   font-size: 2.2em;
   font-weight: 300;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+ }
 
 .feature {
   margin-bottom: 30px;
@@ -1947,12 +1954,8 @@ figure {
   margin-top: 5%;
   background: white;
   padding-left: 10px;
-  // position: fixed;
-  // margin-left: 45px;
-  // margin-right: 145px;
   z-index: 9;
 }
-
 .team-title{
   border-left: 8px solid purple;
   padding-left: 15px;
@@ -1986,4 +1989,7 @@ figure {
 .website-counter-right{
   float: right;
   padding-right: 10px;
+}
+.button{
+  text-align: center;
 }

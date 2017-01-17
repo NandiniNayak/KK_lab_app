@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def page
-    @LatestPublications = Publication.last(3)
+    @LatestPublications = Publication.last(4)
   end
 end
